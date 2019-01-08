@@ -19,10 +19,12 @@ module.exports = {
     // Allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     // Do not allow console.logs etc...
-    'no-console': 2
+    'no-console': 2,
+    semi: 0,
+    'space-before-function-paren': 0
   },
   globals: {
     'jest/globals': true,
     jasmine: true
   }
-}
+};
